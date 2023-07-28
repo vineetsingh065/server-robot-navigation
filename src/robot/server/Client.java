@@ -87,8 +87,6 @@ public class Client {
     	else
     	{
     		System.out.println("Error: you must provide the address of the server");
-    		System.out.println("Usage is:  java Client1 x.x.x.x  (e.g. java Client1 192.168.7.2)");
-    		System.out.println("      or:  java Client1 hostname (e.g. java Client1 localhost)");
     	}    
     	System.out.println("**. End of Application.");
     }
