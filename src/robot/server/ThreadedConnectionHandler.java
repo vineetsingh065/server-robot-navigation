@@ -54,7 +54,7 @@ public class ThreadedConnectionHandler extends Thread
         return true;
     }
 
-    // Use our custom DateTimeService Class to get the date and time
+    // Use DateTimeService Class to get the date and time
     private void getDate() {	// use the date service to get the date
         String currentDateTimeText = theDateService.getDateAndTime();
         this.send(currentDateTimeText);
@@ -74,11 +74,11 @@ public class ThreadedConnectionHandler extends Thread
     
     // Send a pre-formatted error message to the client 
     public void sendError(String message) { 
-        this.send("Error:" + message);	//remember a String IS-A Object!
+        this.send("Error:" + message);
     }
     
     // Close the client socket 
-    public void closeSocket() { //gracefully close the socket connection
+    public void closeSocket() { 
         try {
             this.os.close();
             this.is.close();
